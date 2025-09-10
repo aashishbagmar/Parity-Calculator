@@ -7,7 +7,7 @@ st.title("🛢️ Oil Miller Parity Calculator")
 st.markdown("Enter values to calculate parity and cake cost %.")
 
 # --- Inputs ---
-cotton_seed_rate = st.number_input("Cotton Seed Rate (₹/Quintal)", min_value=0.0, value=0.0, step=10.0)
+cotton_seed_rate = st.number_input("**Cotton Seed Rate (₹/Quintal)**", min_value=0.0, value=0.0, step=10.0)
 expenses = st.number_input("Expenses (₹/Quintal)", min_value=0.0, value=0.0, step=10.0)
 transport  = st.number_input("Transport (₹/Quintal)", min_value=0.0, value=0.0, step=0.1)
 oil_rate = st.number_input("Oil Rate (₹/10kg)", min_value=0.0, value=0.0, step=50.0)
@@ -55,6 +55,7 @@ if st.button("Calculate"):
     st.write(f"**Total Cost:** ₹ {total_cost:,.0f}")
     st.write(f"**Remaining Cost for Cake:** ₹ {cake_cost_total:,.0f}")
    
+
 
 
 
