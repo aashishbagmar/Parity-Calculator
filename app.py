@@ -12,7 +12,7 @@ expenses = st.number_input("Expenses (₹/Quintal)", min_value=0.0, value=0.0, s
 transport  = st.number_input("Transport (₹/Quintal)", min_value=0.0, value=0.0, step=0.1)
 oil_rate = st.number_input("Oil Rate (₹/10kg)", min_value=0.0, value=0.0, step=50.0)
 oil_outturn_per10kg = st.number_input("Oil %", min_value=0.0, value=0.0, step=0.1)
-manufacturing_loss_percent = st.number_input("Manufacturing loss %", min_value=0.0, max_value=100.0, value=80.0, step=0.1)
+manufacturing_loss_percent = st.number_input("Manufacturing loss %", min_value=0.0, max_value=100.0, value=0.0, step=0.1)
 
 # --- Calculation ---
 if st.button("Calculate"):
@@ -55,6 +55,7 @@ if st.button("Calculate"):
     st.write(f"**Total Cost:** ₹ {total_cost:,.0f}")
     st.write(f"**Remaining Cost for Cake:** ₹ {cake_cost_total:,.0f}")
    
+
 
 
 
